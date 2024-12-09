@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     public GameObject wizardImage;
     public GameObject controlsImage;
     public GameObject backgroundUI;
+    public GameObject logo;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI scrollsText;
     public TextMeshProUGUI diedText;
@@ -160,6 +161,7 @@ public class GameManager : MonoBehaviour
         howToPlayButton.SetActive(true);
         quitButton.SetActive(true);
         backToTitleButton.SetActive(false);
+        logo.SetActive(true);
         keepGoingButton.SetActive(false);
         wizardImage.SetActive(true);
         controlsImage.SetActive(false);
@@ -181,6 +183,7 @@ public class GameManager : MonoBehaviour
         backToTitleButton.SetActive(true);
         keepGoingButton.SetActive(false);
         wizardImage.SetActive(false);
+        logo.SetActive (false);
         controlsImage.SetActive(false);
         healthText.text = "";
         scrollsText.text = "";
@@ -199,6 +202,7 @@ public class GameManager : MonoBehaviour
         backToTitleButton.SetActive(true);
         keepGoingButton.SetActive(false);
         wizardImage.SetActive(false);
+        logo.SetActive(false);
         controlsImage.SetActive(true);
         healthText.text = "";
         scrollsText.text = "";
@@ -216,6 +220,7 @@ public class GameManager : MonoBehaviour
         backToTitleButton.SetActive(false);
         keepGoingButton.SetActive(false);
         wizardImage.SetActive(false);
+        logo.SetActive(false);
         controlsImage.SetActive(false);
         UpdateHealthHUD(playerHealth);
         UpdateScrollsHUD(scrollMem);
